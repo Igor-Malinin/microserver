@@ -1,0 +1,8 @@
+server:
+  port: 8085
+
+my:
+  property:
+    test: user-service
+
+description: "user-service-test"

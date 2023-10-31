@@ -1,5 +1,18 @@
 server:
-  port: 8081
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/micro
+    username: postgres
+    password: 1
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      dll-auto: none
+    generate-ddl: true
+  liquibase:
+    change-log: "classpath:db/changelog/2023/10/31-01-changelog.xml"
 
 my:
   property:

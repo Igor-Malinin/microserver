@@ -11,7 +11,7 @@ spring:
     hibernate:
       dll-auto: none
   liquibase:
-    change-log: "classpath:db/changelog/2023/10/31-01-changelog.xml"
+    change-log: "classpath:db/changelog/2023/11/01-01-changelog.xml"
     enabled: true
 
 my:

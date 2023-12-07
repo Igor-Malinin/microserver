@@ -10,3 +10,7 @@ spring:
       server:
         native:
           search-locations: classpath:/config
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: group_id

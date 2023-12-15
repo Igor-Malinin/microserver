@@ -13,6 +13,17 @@ spring:
   liquibase:
     change-log: "classpath:db/changelog/2023/10/31-01-changelog.xml"
     enabled: true
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: user-service-group
+      topic:
+        company-deleted: company-deleted-topic
+    producer:
+      bootstrap-servers: localhost:9092
+      group-id: user-service-group
+      topic:
+        company-deleted-user: company-deleted-user-topic
 
 eureka:
   client:

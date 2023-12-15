@@ -11,8 +11,19 @@ spring:
     hibernate:
       dll-auto: none
   liquibase:
-    change-log: "classpath:db/changelog/2023/11/01-01-changelog.xml"
+    change-log: "classpath:db/changelog/2023/12/13-01-changelog.xml"
     enabled: true
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: company-service-group
+      topic:
+        company-deleted-user: company-deleted-user-topic
+    producer:
+      group-id: company-service-group
+      topic:
+        company-deleted: company-deleted-topic
+
 
 eureka:
   client:
